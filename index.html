@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!--=== Coding by CodingLab | www.codinglabweb.com === -->
-<html lang="en">
+<html lang="en"></html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="style.css">
-     
+
     <!----===== Iconscout CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
@@ -16,7 +16,8 @@
 </head>
 <body>
     <div class="container">
-        <header>Add, Remove or Change User</header>
+        <h1>U-Haul Australia / U-Tow New Zealand</h1>
+        <header>Add, Remove or Change User Details Form</header>
 
         <form action="#">
             <div class="form first">
@@ -26,76 +27,45 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>Full Name</label>
-                            <input type="text" placeholder="Enter your name" required>
+                            <input type="text" placeholder="Enter Staff Full Name" required style="text-transform: uppercase;"/>
                         </div>
 
                         <div class="input-field">
-                            <label>Date of Birth</label>
-                            <input type="date" placeholder="Enter birth date" required>
+                            <label>Start Date</label>
+                            <input type="date" placeholder="Enter start date" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Email</label>
-                            <input type="text" placeholder="Enter your email" required>
+                            <label>Finish Date</label>
+                            <input type="date" placeholder="Enter finish date" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Mobile Number</label>
-                            <input type="number" placeholder="Enter mobile number" required>
+                            <label>Job Title</label>
+                            <input type="text" placeholder="Job Title" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Gender</label>
+                            <label>Employees Manager</label>
+                            <input type="text" placeholder="Employees Manager" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Department</label>
                             <select required>
-                                <option disabled selected>Select gender</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Others</option>
+                                <option disabled selected>Select department</option>
+                                <option>Business (Sales)</option>
+                                <option>Operations (Service)</option>
+                                <option>Call Centre</option>
+                                <option>Admin</option>
+                                <option>Accounts</option>
+                                <option>Other</option>
                             </select>
                         </div>
 
-                        <div class="input-field">
-                            <label>Occupation</label>
-                            <input type="text" placeholder="Enter your ccupation" required>
-                        </div>
                     </div>
                 </div>
-
-                <div class="details ID">
-                    <span class="title">Identity Details</span>
-
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>ID Type</label>
-                            <input type="text" placeholder="Enter ID type" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>ID Number</label>
-                            <input type="number" placeholder="Enter ID number" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Issued Authority</label>
-                            <input type="text" placeholder="Enter issued authority" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Issued State</label>
-                            <input type="text" placeholder="Enter issued state" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Issued Date</label>
-                            <input type="date" placeholder="Enter your issued date" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Expiry Date</label>
-                            <input type="date" placeholder="Enter expiry date" required>
-                        </div>
-                    </div>
-
+            <div>
                     <button class="nextBtn">
                         <span class="btnText">Next</span>
                         <i class="uil uil-navigator"></i>
@@ -105,37 +75,50 @@
 
             <div class="form second">
                 <div class="details address">
-                    <span class="title">Address Details</span>
+                    <span class="title">Systems Access</span>
 
                     <div class="fields">
                         <div class="input-field">
-                            <label>Address Type</label>
-                            <input type="text" placeholder="Permanent or Temporary" required>
+                            <label>3CX (yes for Call Centre staff)</label>
+                            <select required>
+                                <option disabled selected>3CX Required </option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
                         </div>
 
                         <div class="input-field">
-                            <label>Nationality</label>
-                            <input type="text" placeholder="Enter nationality" required>
+                            <label>Office Alarm</label>
+                            <select required>
+                                <option disabled selected>Office Alarm</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
                         </div>
 
                         <div class="input-field">
-                            <label>State</label>
-                            <input type="text" placeholder="Enter your state" required>
+                            <label>Go Canvas (yes for Business or Service Staff)</label>
+                            <select required>
+                                <option disabled selected>GoCanvas Required</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
                         </div>
 
-                        <div class="input-field">
-                            <label>District</label>
-                            <input type="text" placeholder="Enter your district" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Block Number</label>
-                            <input type="number" placeholder="Enter block number" required>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Ward Number</label>
-                            <input type="number" placeholder="Enter ward number" required>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                            <label class="form-check-label">U-Haul</label>
+                            <input class="form-check-input" type="checkbox" id="check2" name="option2" value="something">
+                            <label class="form-check-label">U-Tow</label> <br>
+                            <label><b>Select a permission group, higher levels include all lower level permissions</b></label><br>
+                            <input class="form-check-input" type="checkbox" id="check3" name="option3" value="something">
+                            <label class="form-check-label">Level 1 - Front Office (Call Centre)</label><br>
+                            <input class="form-check-input" type="checkbox" id="check4" name="option3" value="something">
+                            <label class="form-check-label">Level 2 - Accounting (Accounts, Business Reps, Service Managers)</label><br>
+                            <input class="form-check-input" type="checkbox" id="check5" name="option3" value="something">
+                            <label class="form-check-label">Level 3 - Config (Senior Staff for esclation)</label><br>
+                            <input class="form-check-input" type="checkbox" id="check6" name="option3" value="something">
+                            <label class="form-check-label">Level 4 - Administrators</label><br>
                         </div>
                     </div>
                 </div>
