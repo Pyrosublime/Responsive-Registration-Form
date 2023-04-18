@@ -8,7 +8,7 @@
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="style.css">
 
-    <!----===== Iconscout CSS ===== -->
+    <!----===== CSS ===== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <title>Add, Remove or Change User </title> 
@@ -61,6 +61,66 @@
                                 <option>Other</option>
                             </select>
                         </div>
+                        <div class="input-field">
+                            <label>3CX (yes for Call Centre staff)</label>
+                            <select required>
+                                <option disabled selected>3CX Required </option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Office Alarm</label>
+                            <select required>
+                                <option disabled selected>Office Alarm</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>GoCanvas (yes for Business or Service)</label>
+                            <select required>
+                                <option disabled selected>GoCanvas Required</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                        <div class="form-check">
+                            <label>Security Cameras Access</label><br>
+                                <input class="form-check-input" type="checkbox" id="cameras1" name="cameras-1" value="something">
+                                <label class="form-check-label">Create New </label>
+                                <input class="form-check-input" type="checkbox" id="cameras2" name="cameras-2" value="something">
+                                <label class="form-check-label">Change existing </label><br>
+                                <textarea id="story" name="story" rows="5" cols="33" placeholder="Enter sites here"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <label>Digital Matter (Trackers)</label><br>
+                                <input class="form-check-input" type="checkbox" id="Trailer tracker" name="Trailer tracker" value="something">
+                                <label class="form-check-label">Trailers (ALR)</label>
+                                <input class="form-check-input" type="checkbox" id="vehicle tracker" name="vehicle tracker" value="something">
+                                <label class="form-check-label">20x8, Caravan's, Vehicles</label><br>
+                                <input class="form-check-input" type="checkbox" id="yes" name="yes" value="something">
+                                <label class="form-check-label">Yes</label>
+                                <input class="form-check-input" type="checkbox" id="no" name="no" value="something">
+                                <label class="form-check-label">No</label>
+                        </div>
+                        <div class="form-check">
+                            <label>BackOffice</label><br>
+                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                            <label class="form-check-label">U-Haul</label>
+                            <input class="form-check-input" type="checkbox" id="check2" name="option2" value="something">
+                            <label class="form-check-label">U-Tow</label> <br>
+                            <label>Select a permission group, higher levels include all lower level permissions</label><br>
+                            <input class="form-check-input" type="checkbox" id="check3" name="option3" value="something">
+                            <label class="form-check-label">Level 1 - Front Office (Call Centre)</label><br>
+                            <input class="form-check-input" type="checkbox" id="check4" name="option3" value="something">
+                            <label class="form-check-label">Level 2 - Accounting (Accounts, Business Reps, Service Managers)</label><br>
+                            <input class="form-check-input" type="checkbox" id="check5" name="option3" value="something">
+                            <label class="form-check-label">Level 3 - Config (Senior Staff for escalation)</label><br>
+                            <input class="form-check-input" type="checkbox" id="check6" name="option3" value="something">
+                            <label class="form-check-label">Level 4 - Administrators</label><br>
+                        </div>
+                        
 
                     </div>
                 </div>
@@ -77,48 +137,9 @@
                     <span class="title">Systems Access</span>
 
                     <div class="fields">
-                        <div class="input-field">
-                            <label>3CX (yes for Call Centre staff)</label>
-                            <select required>
-                                <option disabled selected>3CX Required </option>
-                                <option>Yes</option>
-                                <option>No</option>
-                            </select>
-                        </div>
+                        
 
-                        <div class="input-field">
-                            <label>Office Alarm</label>
-                            <select required>
-                                <option disabled selected>Office Alarm</option>
-                                <option>Yes</option>
-                                <option>No</option>
-                            </select>
-                        </div>
-
-                        <div class="input-field">
-                            <label>Go Canvas (yes for Business or Service Staff)</label>
-                            <select required>
-                                <option disabled selected>GoCanvas Required</option>
-                                <option>Yes</option>
-                                <option>No</option>
-                            </select>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
-                            <label class="form-check-label">U-Haul</label>
-                            <input class="form-check-input" type="checkbox" id="check2" name="option2" value="something">
-                            <label class="form-check-label">U-Tow</label> <br>
-                            <label><b>Select a permission group, higher levels include all lower level permissions</b></label><br>
-                            <input class="form-check-input" type="checkbox" id="check3" name="option3" value="something">
-                            <label class="form-check-label">Level 1 - Front Office (Call Centre)</label><br>
-                            <input class="form-check-input" type="checkbox" id="check4" name="option3" value="something">
-                            <label class="form-check-label">Level 2 - Accounting (Accounts, Business Reps, Service Managers)</label><br>
-                            <input class="form-check-input" type="checkbox" id="check5" name="option3" value="something">
-                            <label class="form-check-label">Level 3 - Config (Senior Staff for esclation)</label><br>
-                            <input class="form-check-input" type="checkbox" id="check6" name="option3" value="something">
-                            <label class="form-check-label">Level 4 - Administrators</label><br>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -138,7 +159,7 @@
 
                         <div class="input-field">
                             <label>Grandfather</label>
-                            <input type="text" placeholder="Enter grandfther name" required>
+                            <input type="text" placeholder="Enter grandfather name" required>
                         </div>
 
                         <div class="input-field">

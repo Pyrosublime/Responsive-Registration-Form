@@ -90,8 +90,16 @@ form.secActive .form.first{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: fit-content;
+    width: fit-content;
 }
 form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+form .form-check1{
     display: flex;
     width: calc(100% / 3 - 15px);
     flex-direction: column;
