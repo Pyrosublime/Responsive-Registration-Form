@@ -101,7 +101,7 @@ form .fields .input-field{
 }
 form .form-check1{
     display: flex;
-    width: calc(100% / 3 - 15px);
+    width: max-content;
     flex-direction: column;
     margin: 4px 0;
 }
@@ -137,7 +137,7 @@ form .form-check1{
     align-items: center;
     justify-content: center;
     height: 45px;
-    max-width: 250px;
+    max-width: 200px;
     width: 100%;
     border: none;
     outline: none;
