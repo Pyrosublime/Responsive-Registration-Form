@@ -90,8 +90,8 @@ form.secActive .form.first{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: fit-content;
-    width: fit-content;
+    height: 100px;
+    width: 90%;
 }
 form .fields .input-field{
     display: flex;
