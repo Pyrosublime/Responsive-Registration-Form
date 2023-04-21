@@ -101,7 +101,7 @@ form .fields .input-field{
 }
 form .form-check1{
     display: flex;
-    width: calc(100% / 3 - 15px);
+    width: max-content;
     flex-direction: column;
     margin: 4px 0;
 }
