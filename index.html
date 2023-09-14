@@ -14,81 +14,47 @@
     <title>Add, Remove or Change User </title> 
 </head>
 <body>
-    <div class="container">
+    <form class="container">
         <h1>U-Haul Australia / U-Tow New Zealand <br>
         <img src="U-Haul Aust Logo.jpg"/><img src="U-Tow NZ Logo.jpg"/>
         </h1>
         <form action="https://formsubmit.co/a22ce31e07b614137cb3e95b7587d510" method="POST" />
         <input type="hidden" name="_template" value="table">
-        <header>Add, Remove or Change User Details Form</header>
-
+        <h1>Add, Remove or Change User Details Form</h1>
         <form action="#">
-            <div class="form first">
-                <div class="details personal">
-                    <span class="title">Personal Details</span>
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Full Name</label>
-                            <input type="text" name="Full Name" placeholder="Enter Staff Full Name" required style="text-transform: uppercase;"/>
-                        </div>
-                        <div class="input-field">
-                            <label>Start Date</label>
-                            <input type="text" name="start date" placeholder="Enter start date">
-                        </div>
-                        <div class="input-field">
-                            <label>Finish Date</label>
-                            <input type="text" name="finish date" placeholder="Enter finish date">
-                        </div>
-                        <div class="input-field">
-                            <label>Job Title</label>
-                            <input type="text" name="Job Title" placeholder="Job Title" required>
-                        </div>
-                        <div class="input-field">
-                            <label>Employees Manager</label>
-                            <input type="text" name="Employees Manager" placeholder="Employees Manager" required>
-                        </div>
-                        <div class="input-field">
-                            <label>Department</label>
-                            <input type="text" name="Department" placeholder="Department" required>
-                        </div>
-                        <div class="input-field">
-                            <label>3CX (yes for Call Centre staff)</label>
-                            <input type="text" name="3CX" placeholder="yes or no?" required>
-                        </div>
-                        <div class="input-field">
-                            <label>Office Alarm</label>
-                            <input type="text" name="Office Alarm" placeholder="yes or no and which office?" required>
-                        </div>
-                        <div class="input-field">
-                            <label>GoCanvas (Business or Service)</label>
-                            <input type="text" name="GoCanvas" placeholder="yes or no?" required>
-                        </div>
                         <div class="form-check">
-                            <label>Security Cameras Access</label><br>
-                                <input class="form-check-input" type="checkbox" id="cameras1" name="Create New Security Camera Access" value="Create New">
-                                <label class="form-check-label">Create New </label>
-                                <input class="form-check-input" type="checkbox" id="cameras2" name="Change Existing" value="Change Existing">
-                                <label class="form-check-label">Change existing </label><br>
-                                <textarea id="story" name="Security Camera Site access" rows="5" cols="33" placeholder="Enter sites here"></textarea>
+                            <label>Full Name</label><br>
+                            <input type="text" name="Full Name" placeholder="Enter Staff Full Name" required style="text-transform: uppercase;"/><br>
+                            <label>Start Date</label><br>
+                            <input type="text" name="start date" placeholder="Enter start date"><br>
+                            <label>Finish Date</label><br>
+                            <input type="text" name="finish date" placeholder="Enter finish date"><br>
+                            <label>Job Title</label><br>
+                            <input type="text" name="Job Title" placeholder="Job Title" required><br>
+                            <label>Employees Manager</label><br>
+                            <input type="text" name="Employees Manager" placeholder="Employees Manager" required><br>
+                            <label>Department</label><br>
+                            <input type="text" name="Department" placeholder="Department" required><br>
+                            <label>3CX</label><br>
+                            <input type="text" name="3CX" placeholder="yes or no?" required><br>
+                            <label>Office Alarm</label><br>
+                            <input type="text" name="Office Alarm" placeholder="yes or no and which office?" required><br>
+                            <label>GoCanvas</label><br>
+                            <input type="text" name="GoCanvas" placeholder="Business or Service?" required><br>
+                            <label>Staff Member Being Replaced</label><br>
+                            <input type="text" name="Replaced" placeholder="Name"><br>
+                            <label>Placeholder</label><br>
+                            <input type="text" name="Additional Resources" placeholder="text"><br>
+                            <label>Placeholder</label><br>
+                            <input type="text" name="Placeholder3" placeholder="text"><br>
                         </div>
-                        <div class="form-check">
-                            <label>Digital Matter (Trackers)</label><br>
-                                <input class="form-check-input" type="checkbox" id="yes" name="Tracker Access Yes" value="Yes">
-                                <label class="form-check-label">Yes</label>
-                                <input class="form-check-input" type="checkbox" id="no" name="Tracker Access No" value="No">
-                                <label class="form-check-label">No</label><br>
-                                <input class="form-check-input" type="checkbox" id="Trailer tracker" name="Trailer tracker" value="Trailers (ALR)">
-                                <label class="form-check-label">Trailers (ALR)</label>
-                                <input class="form-check-input" type="checkbox" id="vehicle tracker" name="vehicle tracker" value="20x8, Caravan's, Vehicles">
-                                <label class="form-check-label">20x8, Caravan's, Vehicles</label><br>
-                        </div>
-                        <div class="form-check">
-                            <label>BackOffice</label><br>
+                        <div class="form-check2"><br>
+                            <h3>BackOffice</h3>
+                            <label class="form-check-label"><h5>Select a permission group, higher levels include all lower level permissions</h5></label>
                             <input class="form-check-input" type="checkbox" id="check1" name="BackOffice U-Haul" value="Yes">
                             <label class="form-check-label">U-Haul</label>
                             <input class="form-check-input" type="checkbox" id="check2" name="BackOffice U-Tow" value="Yes">
-                            <label class="form-check-label">U-Tow</label> <br>
-                            <label>Select a permission group, higher levels include all lower level permissions</label><br>
+                            <label class="form-check-label">U-Tow</label><br>
                             <input class="form-check-input" type="checkbox" id="check3" name="Level 1 - Front Office (Call Centre)" value="Level 1 - Front Office (Call Centre)">
                             <label class="form-check-label">Level 1 - Front Office (Call Centre)</label><br>
                             <input class="form-check-input" type="checkbox" id="check4" name="Level 2 - Accounting (Accounts, Business Reps, Service Managers)" value="Level 2 - Accounting (Accounts, Business Reps, Service Managers)">
@@ -97,13 +63,34 @@
                             <label class="form-check-label">Level 3 - Config (Senior Staff for escalation)</label><br>
                             <input class="form-check-input" type="checkbox" id="check6" name="Level 4 - Administrators" value="Level 4 - Administrators">
                             <label class="form-check-label">Level 4 - Administrators</label><br>
-                            <button type="submit">submit</button>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
+                        <div class="form-check3">
+                            <h3>Digital Matter (Trackers)</h3>
+                            <input class="form-check-input" type="checkbox" id="yes" name="Tracker Access Yes" value="Yes">
+                            <label class="form-check-label">Yes</label>
+                            <input class="form-check-input" type="checkbox" id="no" name="Tracker Access No" value="No">
+                            <label class="form-check-label">No</label><br>
+                            <input class="form-check-input" type="checkbox" id="Trailer tracker" name="Trailer tracker" value="Trailers (ALR)">
+                            <label class="form-check-label">Trailers (ALR)</label>
+                            <input class="form-check-input" type="checkbox" id="20x8 tracker" name="vehicle tracker" value="20x8, Caravan's, Vehicles">
+                            <label class="form-check-label">20x8, 16x8 and Caravan's</label><br>
+                            <input class="form-check-input" type="checkbox" id="Vehicles tracker" name="Trailer tracker" value="Trailers (ALR)">
+                            <label class="form-check-label">Vehicles</label><br>
+                            <label><h3>Security Camera Access</h3></label>
+                            <input class="form-check-input" type="checkbox" id="cameras1" name="Create New Security Camera Access" value="Create New">
+                            <label class="form-check-label">Create New </label>
+                            <input class="form-check-input" type="checkbox" id="cameras2" name="Change Existing" value="Change Existing">
+                            <label class="form-check-label">Change existing </label><br>
+                            <label><h3>Hubdoc</h3></label>
+                            <input class="form-check-input" type="checkbox" id="Hubdoc" name="Hubdoc" value="Create New">
+                            <label class="form-check-label">Create New </label>
+                            <input class="form-check-input" type="checkbox" id="Hubdoc2" name="Disable" value="Disable">
+                            <label class="form-check-label">Disable </label>
+                        </div>
+                            <button type="submit">Submit</button>
+            
+            </form>
     <script src="script.js"></script>
+    </form>
 </body>
 </html>

@@ -2,29 +2,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 0;;
+    box-sizing: content-box;
+    width: auto;
     font-family: 'Poppins', sans-serif;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center;
 }
 h1{
     text-align: center;
     color: #F7931D;
 }
+h2{
+    text-align: center;
+    color: black;
+}
 body{
-    min-height: 100vh;
-    display: flex;
+    height: 100%;
+    display: block;
     align-items: center;
     justify-content: center;
     background: #333;
 }
 .container{
-    position: relative;
-    max-width: 900px;
-    width: 100%;
-    height: fit-content;
+    position: absolute;
+    max-width: max-content;
+    width: 800px;
+    height: 900;
     border-radius: 6px;
-    padding: 30px;
-    margin: 0 15px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
@@ -51,31 +60,9 @@ body{
     background-color: #fff;
     overflow: scroll;
 }
-.container form .form{
-    position: absolute;
-    background-color: #fff;
-    transition: 0.3s ease;
-}
-.container form .form.second{
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(100%);
-}
-.form-check-label{
+.form .check-input{
     position: relative;
-}
-.form-check-input{
-    position: relative;
-}
-form.secActive .form.second{
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateX(0);
-}
-form.secActive .form.first{
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(-100%);
+    height: 100%;
 }
 .container form .title{
     display: block;
@@ -85,25 +72,18 @@ form.secActive .form.first{
     margin: 6px 0;
     color: #333;
 }
-.container form .fields{
-    display: flex;
+form .form-check{
+    display: block;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 100px;
-    width: 90%;
+    column-count: 2;
 }
-form .fields .input-field{
-    display: flex;
-    width: calc(100% / 3 - 15px);
-    flex-direction: column;
-    margin: 4px 0;
+form .form-check2{
+    display: block;
+    align-items: center;
 }
-form .form-check1{
-    display: flex;
-    width: max-content;
-    flex-direction: column;
-    margin: 4px 0;
+form .form-check3{
+    display: block;
+    align-items: center;
 }
 .input-field label{
     font-size: 12px;
@@ -132,42 +112,20 @@ form .form-check1{
 .input-field input[type="date"]:valid{
     color: #333;
 }
-.container form button, .backBtn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 45px;
-    max-width: 200px;
-    width: 100%;
-    border: none;
-    outline: none;
-    color: #fff;
-    border-radius: 5px;
-    margin: 25px 0;
-    background-color: #666;
-    transition: all 0.3s linear;
-    cursor: pointer;
-}
 .container form .btnText{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
 }
 form button:hover{
     background-color: #F7931D;
+    border-radius: 12px;
+    width: 10%;
+    height: 5%;
 }
-form button i,
-form .backBtn i{
-    margin: 0 6px;
-}
-form .backBtn i{
-    transform: rotate(180deg);
-}
-form .buttons{
+form .button{
     display: flex;
     align-items: center;
-}
-form .buttons button , .backBtn{
-    margin-right: 14px;
+    border-radius: 12px;
 }
 
 @media (max-width: 750px) {
@@ -180,10 +138,17 @@ form .buttons button , .backBtn{
     form .fields .input-field{
         width: calc(100% / 2 - 15px);
     }
+    form .form.first{
+        height: 100%;
+    }
 }
 
 @media (max-width: 550px) {
     form .fields .input-field{
         width: 100%;
     }
-}
+    form .fields form-check{
+    height: 100%;
+    }
+
+    }
