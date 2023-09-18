@@ -30,7 +30,7 @@ body{
     position: absolute;
     max-width: max-content;
     width: 800px;
-    height: 900;
+    height: 970px;
     border-radius: 6px;
     padding: 5px;
     margin-left: auto;
@@ -81,10 +81,14 @@ form .form-check{
 form .form-check2{
     display: block;
     align-items: center;
+    text-align: justify;
+    padding-left: 40px;
 }
 form .form-check3{
     display: block;
     align-items: center;
+    columns: 2;
+    text-align: "." center;
 }
 .input-field label{
     font-size: 12px;
@@ -124,9 +128,10 @@ form button:hover{
     height: 5%;
 }
 form .button{
-    display: flex;
     align-items: center;
     border-radius: 12px;
+    width: 50%;
+    height: 15%;
 }
 
 @media (max-width: 750px) {
